@@ -21,7 +21,8 @@ a test using video as material in ThreeJs, based on https://sbcode.net/threejs/g
 
 ## Screenshots
 
-https://user-images.githubusercontent.com/979362/185793724-3ef9ea5f-687c-4bd2-bd0c-3afec51db32e.mp4
+
+https://user-images.githubusercontent.com/979362/185793901-75b9efac-1653-4aa0-8828-2bf5c45d708f.mp4
 
 ## Technologies
 
