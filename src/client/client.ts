@@ -21,7 +21,7 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 )
-const pos = new THREE.Vector3(-9.573628365513542, 7.180221274135149, 31.912094551711778);
+const pos = new THREE.Vector3(-9.573628365513542, 7.180221274135149, 31.912094551711778)
 camera.position.set(pos.x, pos.y, pos.z)
 
 const renderer = new THREE.WebGLRenderer()
@@ -45,28 +45,28 @@ material.envMapIntensity = 25
 
 // see how it looks with a single image or with a video texture
 // only one of the two should be used at a time
-let debugGradientSingle = false;
-let debugVideo = true;
+let debugGradientSingle = false
+let debugVideo = true
 
 if (debugGradientSingle) {
-    const texture = new THREE.TextureLoader().load('img/grid.png');
-    material.map = texture;
+    const texture = new THREE.TextureLoader().load('img/grid.png')
+    material.map = texture
 }
 if (debugVideo) {
-    const video = document.getElementById('video') as any | null;
+    const video = document.getElementById('video') as any | null
     if (video != null) {
-        video.muted = true;
-        video.play();
+        video.muted = true
+        video.play()
     }
-    const videoTexture = new THREE.VideoTexture(video);
+    const videoTexture = new THREE.VideoTexture(video)
     const vid = new THREE.MeshBasicMaterial({
         map: videoTexture,
         blending: THREE.AdditiveBlending,
         depthTest: true,
         transparent: true
-    });
+    })
 
-    material.map = vid.map;
+    material.map = vid.map
 }
 
 //HDRI environment map
@@ -89,9 +89,9 @@ const envTexture = new THREE.CubeTextureLoader().load(
 let objectMesh: THREE.Mesh
 let hitboxGltf = null as any
 let timeScale = 1 as number
-let obj = null as any;
+let obj = null as any
 
-let mixer = null as any;
+let mixer = null as any
 const loader = new GLTFLoader()
 loader.load(
     'models/objects.glb',
@@ -113,7 +113,7 @@ loader.load(
                         action.play()
                         action.setLoop(THREE.LoopPingPong)
                         action.timeScale = timeScale
-                    });
+                    })
                 }
                 m.receiveShadow = true
                 m.castShadow = true
@@ -209,7 +209,7 @@ window.addEventListener('mousemove', (event) => {
     mouse.y = -(event.clientY / window.innerHeight * 2 - 1)
 })
 
-let currentIntersect = null as any;
+let currentIntersect = null as any
 window.addEventListener('click', () => {
     if (currentIntersect) {
         const hitbox = currentIntersect.object.name
