@@ -16,13 +16,14 @@ a test using video as material in ThreeJs, based on https://sbcode.net/threejs/g
 ## General info
 
 - the clip is taken from https://www.vecteezy.com/free-videos/color-gradient
-- How to apply video as texture in ThreeJS https://www.youtube.com/watch?v=OM5kgBvAj2c
+- How to apply a video as a texture in ThreeJS https://www.youtube.com/watch?v=OM5kgBvAj2c
 - How to unwrap a texture in Blender https://www.youtube.com/watch?v=6F5M0ZuL-eg&t=48s
 - Create a gradient animation in After Effects https://www.youtube.com/watch?v=ESdyPJhSbUU
 
 ## Screenshots
 
-![Example screenshot](./planning/screenshot.jpg)
+
+https://user-images.githubusercontent.com/979362/185793901-75b9efac-1653-4aa0-8828-2bf5c45d708f.mp4
 
 ## Technologies
 
@@ -50,7 +51,7 @@ const vid = new THREE.MeshBasicMaterial({
     map: videoTexture,
     blending: THREE.AdditiveBlending,
     depthTest: true,
-     transparent: true
+    transparent: true
 });
 ```
 
