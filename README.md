@@ -49,7 +49,7 @@ const vid = new THREE.MeshBasicMaterial({
     map: videoTexture,
     blending: THREE.AdditiveBlending,
     depthTest: true,
-     transparent: true
+    transparent: true
 });
 ```
 
