@@ -1,4 +1,5 @@
 # ThreeJs_videotexture
+
 a test using video as material in ThreeJs, based on https://sbcode.net/threejs/glass-transmission/
 
 ## Table of contents
@@ -25,11 +26,11 @@ a test using video as material in ThreeJs, based on https://sbcode.net/threejs/g
 
 ## Technologies
 
-- Node
+- Node 17.8.0
 - VSC code
-- JavaScript
-- Typescript
-- ThreeJs
+- Typescript 4.6.2
+- ThreeJs 0.143.0
+- Webpack 5.70.0
 - ...
 
 ## Setup
@@ -80,4 +81,3 @@ https://sbcode.net/threejs/glass-transmission/
 ## Contact
 
 By Bermarte
-
