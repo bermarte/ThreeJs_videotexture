@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/979362/185793901-75b9efac-1653-4aa0-88
 ## Technologies
 
 - Node 17.8.0
-- VSC code
+- VS Code
 - Typescript 4.6.2
 - ThreeJs 0.143.0
 - Webpack 5.70.0
